@@ -1,0 +1,455 @@
+/*==============================================
+[Main stylesheet style.css]
+
+Author:	 Carlos Daniel Gonzalez - Web Develop
+Version:	1.0
+Created:	14 July 2022
+Last updated:	00 MArch 2022
+Template:	Template - Desktop Web Template
+================================================*/
+
+/*
+[Table to Contents]
+	1. GENERAL
+	2. MENU
+	3. IZQUIERDA-DERECHA	
+	4. PORQUE ELEJIRNOS
+	5. NOTIFICACIONES
+	6. SERVICIOS	
+	7. PLANES
+	8. CONTACTO
+	9. FOOTER
+
+*/
+
+/*===============================================*/
+/* 1. GENERAL	 						 */
+/*===============================================*/
+
+:root {
+	--theme-color: white;
+	--primary-color: blue;
+	--secundary-color:red;
+	--text-color:black;
+	--text-color-inverse:white;
+	--menu-background-responsive:blue;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+}
+
+/*===============================================*/
+/* 2. MENU				 */
+/*===============================================*/
+
+.bloque {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.header {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.850), rgba(0, 0, 61, 0.85)), url(img/img3.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.centrar {
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid rgba(255, 0, 0, 0);
+	margin: auto;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.logo {
+	color:var(--text-color-inverse);
+	margin-top: 10px;
+	width: 30%;
+	float: left;
+	text-align: left;
+}
+
+.menu-principal {
+	width: 60%;
+	float: right;
+	border: 0px solid rgba(255, 255, 255, 0);
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 7px;
+}
+
+.menu-principal ul li a:hover {
+	color: yellow;
+}
+
+.menu-principal ul {}
+
+.menu-principal ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.menu-principal ul li a {
+	color: var(--text-color-inverse);
+	text-decoration: none;
+}
+
+/*===============================================*/
+/* 3. IZQUIERDA-DERECHA				 */
+/*===============================================*/
+
+.izquierda, .derecha {
+	width: 49%;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0);
+	display: inline-block;
+
+}
+
+.izquierda {
+	float: left;
+	text-align: left;
+}
+
+.subtitulo {
+	color: var(--text-color-inverse);
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titulo-principal {
+	color: var(--text-color-inverse);
+	font-size: 60px;
+}
+
+.descripcion {
+	color: var(--text-color-inverse);
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+.derecha {
+	float: right;
+}
+
+/*===============================================*/
+/* 4. PORQUE ELEJIRNOS				 */
+/*===============================================*/
+
+.elegir {
+	padding: 50px 0px;
+}
+
+.elegir .derecha {
+	text-align: left;
+}
+
+.img-elige{
+	width: 70%;
+}
+
+.elegir .derecha .texto-naranja {
+	color: black;
+}
+
+.elegir .derecha h1 {
+	color: blue;
+	font-size: 35px;
+}
+
+.elegir .derecha p {
+	color: grey;
+	text-align: left;
+	font-weight: 300;
+}
+
+.opciones {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.opcion {
+	width: 45%;
+	border: 1px solid grey;
+	margin-bottom: 20px;
+	padding: 7px;
+	border-left: solid 4px red;
+	border-radius: 7px;
+}
+
+.opcion:hover {
+	color: rgb(63, 63, 255);
+}
+
+.img-opciones {
+	width: 20%;
+	float: left;
+}
+
+.texto-opciones {
+	margin-top: 15px;
+	float: left;
+	margin
+}
+
+/*===============================================*/
+/* 5. NOTIFICACIONES				 */
+/*===============================================*/
+
+.notificaciones {
+	height: auto;
+	overflow: hidden;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.850), rgba(0, 0, 61, 0.85)), url(img/img3.webp);
+	padding: 30px 0px;
+}
+
+.notificaciones h4 {
+	font-size: 20px;
+	font-weight: 400;
+	color: var(--text-color-inverse);
+}
+
+.form-notificaciones {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.notificaciones h1 {
+	color: var(--text-color-inverse);
+}
+
+.entrada-not {
+	width: 30%;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 7px;
+	border: 0;
+}
+
+.boton-not {
+	font-size: 20px;
+	padding: 10px 30px;
+	background: blue;
+	color: var(--text-color-inverse);
+	border-radius: 7px;
+	border: 0;
+}
+
+.boton-not:hover {
+	background: rgb(59, 59, 255);
+}
+
+/*===============================================*/
+/* 6. SERVICIOS				 */
+/*===============================================*/
+
+.servicios {
+	padding: 50px 0px;
+}
+
+.principal-servicios { 
+	color: grey;
+	font-size: 35px;
+}
+
+.texto-naranja {
+	color: var(--text-color);
+}
+
+.contenedores {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	margin-top: -50px;
+}
+
+.contenedores .contenido {
+	width: 45%;
+	height: 150px;
+	position: relative;
+	padding: 20px;
+	border: 1px solid grey;
+	text-align: left;
+	box-shadow: 0px 0px 10px grey;
+	border-radius: 7px;
+	margin-bottom: 25px;
+}
+
+.img-servicios {
+	width: 30%;
+	float: left;
+	margin-right: 10px; 
+}
+
+.parrafo {
+	color: grey;
+	text-align: left;
+}
+
+/*===============================================*/
+/* 7. PLANES				 */
+/*===============================================*/
+
+.planes {
+	background: #f5f5f0;
+}
+
+.contenedor-planes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	align-items: baseline;	
+}
+
+.plan {
+	width: 30%;
+	height: auto;
+	overflow: hidden;
+	background-color: white;
+	border-radius: 7px;
+}
+
+.titulo-plan {
+	padding: 15px;
+	background: orange;
+	color: var(--text-color-inverse);
+	float: left; 
+	border-radius: 0px 25px 25px 0px;
+	margin-top: 30px; 	
+}
+
+.img-plan {
+	width: 80%;
+}
+
+.boton-planes {
+	font-size: 20px;
+	padding: 17px 35px;
+	background: blue;
+	color: var(--text-color-inverse);
+	border-radius: 7px;
+	border: 0px;
+	width: 100%;
+}
+
+.boton-planes:hover {
+	background: rgb(59, 59, 255);
+}
+
+.plan ul{
+	margin-top: 20px;
+}
+
+.plan ul li {
+	height: 50px;
+}
+
+.btn-return {
+	text-align: center;
+	cursor: pointer;
+}
+
+/*===============================================*/
+/* 8. CONTACTO		 */
+/*===============================================*/
+
+
+.contacto {
+	background-image: url(img/footer.fw.png);
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenido-contacto {
+	width: 50%;
+	padding: 10px 20px;
+	border: 1px solid rgba(255, 0, 0, 0);
+	text-align: left;	
+}
+
+.titulo-contacto  {
+	color: var(--text-color-inverse);
+	font-size: 14px;
+	text-align: center;
+}
+
+.parrafo-contacto {
+	color: var(--text-color-inverse);
+	font-size: 12px;
+	text-align: center;
+}
+
+.contenido-contacto ul{
+
+}
+
+.contenido-contacto ul li {
+	font-size: 12px;
+	color: var(--text-color-inverse);
+}
+
+
+/*===============================================*/
+/* 9. FOOTER				 */
+/*===============================================*/
+
+.footer {
+	height: 260px;
+	width: 100%;
+	padding: 40px 0px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.900), rgba(0, 0, 61, 0.9)), url(img/img3.webp);
+}
+
+.footer .centrar .izquierda{
+	color: var(--text-color-inverse);
+}
+
+.footer .centrar .izquierda h4,p {
+	text-align: center;
+}
+
+.footer .centrar .izquierda p {
+	border-top: 1px solid white;
+	font-size: 12px;
+}
+
+.footer .centrar .izquierda ul li{
+	text-align: left;
+}
+
+.social {
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.footer .centrar .derecha {
+	text-align: right;
+}
+.pie {
+	font-size: 12px;
+	color: white;
+	border-top: 1px solid white;
+}
+
+
+
+
+
+
+
+
